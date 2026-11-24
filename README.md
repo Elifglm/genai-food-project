@@ -33,6 +33,18 @@ By taking these preferences into account, the system helps users find recipes th
 - **OpenAI GPT**: Generates recipe suggestions based on user preferences.
 - **Telegram Bot API**: Provides an interface for user interaction.
 
+## Run locally
+
+```bash
+pip install -r requirements.txt
+cp .env.example .env    # fill in OPENAI_API_KEY and TELEGRAM_BOT_TOKEN, then export them
+cd backend/app
+python foodplaner.py    # starts the Telegram bot
+python flask_view.py    # optional: view stored preferences at http://localhost:5000
+```
+
+ChromaDB data is created locally under `chromadb/` on first run and is not committed.
+
 ## Outcome
 This project successfully integrates AI into meal planning by:
 - Generating personalized recipe suggestions.

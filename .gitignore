@@ -1,0 +1,10 @@
+# Local ChromaDB data (user preferences)
+chromadb/
+*.sqlite3
+
+.env
+__pycache__/
+*.pyc
+venv*/
+.venv/
+.DS_Store
